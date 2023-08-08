@@ -1,2 +1,2 @@
 # Neomorfismo
-Actividad de Neomorfismo implementado con Mixins en SASS
+Actividad de Neomorfismo implementado con Mixins en SASS.
