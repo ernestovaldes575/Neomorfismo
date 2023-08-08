@@ -1,0 +1,24 @@
+//Creando un mixin con neomorfismo con SASS
+//?Creando un mixin 
+@mixin neo($radius, $eje){
+    border-radius: $radius;
+    background-color: #f1f1f1;
+    box-shadow: $eje $eje ($eje*2) #bebebe, (-$eje)(-$eje)($eje*2) #ffffff;
+}
+@mixin flex($display, $align, $just){
+    display: $display;
+    align-items: $align;
+    justify-content: $just;
+}
+
+//*Llamndo el mixin
+.container{
+    max-width: 75%;
+    margin: 0 auto;
+    @include flex(flex, center, center)
+}
+article{
+    max-width: 40%;
+    padding: .5em;
+    @include neo(.5em, .2em);
+}
